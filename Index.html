@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift 1</title>
+    <link rel="stylesheet" href="/CSSkod/Style.css"/>
+</head>
+
+<body>
+    <h1>Uppgift 1</h1>
+    <nav>
+        <ul>
+        <li><a id="Länk1" href="Index.html">Fråga 1</a></li>
+        <li><a id="Länk2" href="Fråga2.html">Fråga 2</a></li>
+        <li><a id="Länk3" href="Fråga3.html">Fråga 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img id="Bild1" src="/Bilder/Pixlr DNS redigerad.jpg" alt="">
+    </main>
+    <h2 id="Rubrik1">F1. Datakommunikation och webbadresser</h2>
+    <br>
+    <h4 class="frågorna">1. Vilken roll spelar DNS servern när en användare navigerar till en webbsida?</h4>
+    <p>Svar: DNS står för Domain Name System och en DNS server är då en server som matchar olika websidors IP-adresser med dess domännamn. När en internetanvändare söker efter ett domännamn i sin webläsare skickas den alltså till rätt IP-adress trots att den endast sökt efter ett domännamn, tack vare DNS servern. Dess funktion är alltså att förenkla surfandet genom att låta användare söka efter namn och ord istället för komplicerade IP-adresser som är omöjliga att komma ihåg.</p>
+    <br>
+    <h4 class="frågorna">2. Beskriv kortfattat de steg som klienten och servern tillsammans går igenom när en webbsida bestående av filerna index.html, style.css och example.jpg öppnas. </h4>
+    <p>Svar: Hela förloppet börjar med att klienten skickar en förfrågan till servern. Den förfrågan innehåller en URL och ett antal protokoll. Protokollen bestämmer hur kommunikationen kommer att ske, exempel på protokoll är: HTTPS, TCP, IP osv, beroende på vilken typ av kommunikation det rör sig om. Den URL som förfrågan innehåller talar om för servern var filerna som den ska skicka tillbaka till klienten ligger. När servern har tagit emot förfrågan letar den rätt på filerna och skickar tillbaka de till klienten på det sätt som protokollen bestämmer. Klienten visar nu webbsidan för användaren, bestående av de filerna. </p>
+    <br>
+    <h4 class="frågorna">3. Beskriv de delar som följande url består av:</h4>
+    <p>* https://medieteknik.lnu.se:443/wt1/index.html#intro</p>      
+    <p>* Ta upp alla delar som åtskiljs av /, : och #</p>
+    <p>Svar: "https" är det protokoll som gäller vid kommunikationen och står för "hyper text transfer protocol secure"&#33; "medieteknik.lnu.se" är webbsidans domännamn, vilket matchas till serverns ip-adress i den DNS-server som har hand om .se-domäner. "443" anger till vilken port hos servern som förfrågan ska skickas till, 443 är standard för https och brukar inte finnas med i den url som användaren ser. "wt1" anger inom vilken mapp som filen ligger. "index.html" anger vilken fil som ska hämtas. "intro" anger vilken sida som ska visas för användaren när denne använder länken för att besöka webbsidan, detta specificeras eftersom det finns flera sidor på webbsidan.</p>
+    <nav>
+        <ul id="Länkarna">
+        <li><a id="Länk1" href="Index.html">Fråga 1</a></li>
+        <li><a id="Länk2" href="Fråga2.html">Fråga 2</a></li>
+        <li><a id="Länk3" href="Fråga3.html">Fråga 3</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
